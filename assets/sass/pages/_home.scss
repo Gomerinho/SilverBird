@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 700px;
+}
+
+.text {
+  padding: 1rem;
+  width: 70%;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  p {
+    margin: 1rem auto;
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    text-align: center;
+    max-width: 45ch;
+    letter-spacing: -0.4px;
+
+    color: #5d534f;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 auto;
+    line-height: 39px;
+    max-width: 19ch;
+  }
+}
+
+.link__arrow {
+  display: inline-block;
+  margin-left: 0.4em;
+  width: 18px;
+  height: 5px;
+  background-image: url(/images/arrow.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0.15rem;
+}

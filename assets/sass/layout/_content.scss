@@ -1,0 +1,60 @@
+.content {
+  margin: 1rem 0.9rem;
+  position: relative;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1.3rem;
+    margin: 1rem 0;
+    justify-content: center;
+    @media (min-width: 45em) {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 45em) {
+    margin: 3rem 2.9rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    .divider {
+      border-left: 1px solid $color-alternate-light;
+    }
+  }
+
+  &__subtitle {
+    width: 100%;
+    position: relative;
+    margin: 0.5rem auto 1.5rem;
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      a {
+        display: none;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media (min-width: 48em) {
+          display: block;
+        }
+      }
+    }
+    &__item {
+      &:nth-child(2n) {
+        border-left: 1px solid $color-alternate-light;
+        width: 1px;
+        height: 0.5em;
+        margin: 0 1rem;
+      }
+    }
+
+    @media (min-width: 48em) {
+      width: 100%;
+    }
+  }
+}
